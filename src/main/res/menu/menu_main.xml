@@ -1,0 +1,33 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.projet.MainActivity">
+
+    <item android:id="@+id/menu_search"
+        android:title="Search"
+        android:icon="@drawable/ic_search_white_24dp"
+        app:showAsAction="ifRoom|collapseActionView"
+        app:actionViewClass="androidx.appcompat.widget.SearchView" />
+
+    <item
+        android:id="@+id/tri"
+        android:title="Trier par"
+        app:showAsAction="never">
+
+        <menu>
+            <item
+                android:id="@+id/lettre"
+                android:title="Ordre alphabétique"
+                app:showAsAction="never" >
+            </item>
+
+            <item
+                android:id="@+id/date"
+                android:title="Ordre chronologique"
+                app:showAsAction="never" >
+            </item>
+        </menu>
+
+    </item>
+
+</menu>
